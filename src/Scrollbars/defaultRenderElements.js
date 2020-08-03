@@ -5,44 +5,40 @@ export function renderViewDefault(props) {
     return <div {...props}/>;
 }
 
-export function renderTrackHorizontalDefault({ style, ...props }) {
+export function renderTrackHorizontalDefault(props) {
     const finalStyle = {
-        ...style,
         right: 2,
         bottom: 2,
         left: 2,
         borderRadius: 3
     };
-    return <div style={finalStyle} {...props} />;
+    return <div {...props} style={{ ...props.style, ...finalStyle }} />;
 }
 
-export function renderTrackVerticalDefault({ style, ...props }) {
+export function renderTrackVerticalDefault(props) {
     const finalStyle = {
-        ...style,
         right: 2,
         bottom: 2,
         top: 2,
         borderRadius: 3
     };
-    return <div style={finalStyle} {...props} />;
+    return <div {...props} style={{ ...props.style, ...finalStyle }} />;
 }
 
-export function renderThumbHorizontalDefault({ style, ...props }) {
+export function renderThumbHorizontalDefault(props) {
     const finalStyle = {
-        ...style,
         cursor: 'pointer',
         borderRadius: 'inherit',
         backgroundColor: 'rgba(0,0,0,.2)'
     };
-    return <div style={finalStyle} {...props} />;
+    return <div {...props} style={{ ...props.style, ...finalStyle }} />;
 }
 
-export function renderThumbVerticalDefault({ style, ...props }) {
+export function renderThumbVerticalDefault(props) {
     const finalStyle = {
-        ...style,
         cursor: 'pointer',
         borderRadius: 'inherit',
         backgroundColor: 'rgba(0,0,0,.2)'
     };
-    return <div style={finalStyle} {...props} />;
+    return <div {...props} style={{ ...props.style, ...finalStyle }} />;
 }
