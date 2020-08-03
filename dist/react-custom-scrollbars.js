@@ -1240,7 +1240,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    } else {
 	        scrollbarWidth = 0;
 	    }
-	    return scrollbarWidth || 0;
+	    return scrollbarWidth || 15;
 	}
 
 /***/ }),
